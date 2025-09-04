@@ -1,7 +1,7 @@
 # Kasm OpenArena
-OpenArena docker image for Kasm workspaces
+OpenArena docker image for Kasm Workspaces (https://kasmweb.com)
 
-Load this image into Kasm Workspaces
+Load this image into Kasm Workspaces by adding the Sully's Choice Kasm Workspace Registry: https://sullyschoice.github.io/kasm-registry/
 
 ## Manual Run
 
