@@ -8,19 +8,11 @@ WORKDIR $HOME
 
 ######### Customize Container Here ###########
 
-# Install Google Chrome
 COPY ./src/openarena $INST_SCRIPTS/openarena/
 RUN bash $INST_SCRIPTS/openarena/install_openarena.sh  && rm -rf $INST_SCRIPTS/openarena/
 
-# Update the desktop environment to be optimized for a single application
-#RUN cp $HOME/.config/xfce4/xfconf/single-application-xfce-perchannel-xml/* $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/
-#RUN cp /usr/share/backgrounds/bg_kasm.png /usr/share/backgrounds/bg_default.png
-#RUN apt-get remove -y xfce4-panel
-
-
 COPY ./src/openarena/custom_startup.sh $STARTUPDIR/custom_startup.sh
 RUN chmod +x $STARTUPDIR/custom_startup.sh
-
 
 ######### End Customizations ###########
 
