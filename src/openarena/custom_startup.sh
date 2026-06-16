@@ -5,7 +5,7 @@ PGREP="ioquake3"
 export MAXIMIZE="false"
 export MAXIMIZE_NAME="ioquake3"
 MAXIMIZE_SCRIPT=$STARTUPDIR/maximize_window.sh
-DEFAULT_ARGS="+set com_maxfps 125 +set cg_drawfps 1 +set r_fullscreen 1 +set r_customwidth 640 +set r_customheight 480"
+DEFAULT_ARGS="+set com_maxfps 125 +set cg_drawfps 1 +set r_customwidth 640 +set r_customheight 480"
 ARGS=${APP_ARGS:-$DEFAULT_ARGS}
 
 options=$(getopt -o gau: -l go,assign,url: -n "$0" -- "$@") || exit
